@@ -123,10 +123,8 @@
     position: absolute;
     top: 100%;
     left: rem(-32);
-    
-    padding-top: rem(30);
     z-index: 2;
-    padding: rem(20) 0;
+    padding: rem(30) 0 rem(20);
     width: rem(455);
     
     @media(max-width:1060px){
@@ -181,10 +179,16 @@
     p {
       font-weight: 700;
       line-height: 150%;
+      transition: all 0.3s ease  0s;
     }
     .menu__str {
       width: rem(20);
       margin-left: auto;
+    }
+    &:hover {
+        p {
+          color: #3044b6;
+        }
     }
 
 
@@ -203,6 +207,11 @@
         }
       }
     }
+    // ._hover & {
+    //   p {
+    //     color: #3044b6;
+    //   }
+    // }
   }
 
   &__sub-list {

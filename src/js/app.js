@@ -113,3 +113,18 @@ function toggleActiveClass(elements) {
     });
   });
 }
+
+
+// function addHoverClassToNearestBlock(elements) {
+//   elements.forEach(element => {
+//     element.addEventListener('hover', () => {
+//       const nearestBlock = element.closest('.hover-block');
+//       if (nearestBlock.classList.contains('hover-block')) {
+//         nearestBlock.classList.add('_hover');
+//       }
+//     })
+//   });
+// }
+// const menuSubList = document.querySelectorAll('.menu__sub-list');
+
+// addHoverClassToNearestBlock(menuSubList);
