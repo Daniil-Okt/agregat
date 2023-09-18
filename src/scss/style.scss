@@ -1,0 +1,73 @@
+@use 'sass:math';
+
+/** Подключение шрифтов локально из папки "./src/fonts" */
+@import 'config/fonts';
+
+/** Подключение переменных */
+@import 'config/vars';
+
+/** Подключение sass function и mixins и extends стилей */
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/patternSelectors';
+
+/** Обнуление */
+@import 'config/reset';
+
+/**
+	* Библиотеки
+	* раскомментировать для использования
+	*/
+// @import 'libs/aos';
+// @import 'libs/swiper';
+
+/** Подключение custom scrollbar для всего сайта */
+@import 'config/scrollbar';
+
+/** Общие параметры, шаблоны(заготовки) и вспомогательные классы */
+@import 'config/base';
+
+/** БЕМ блоки используемые во всё проекте */
+@import 'config/common';
+
+/** Подключение стилей отдельных блоков и секций */
+@import 'components/header';
+@import 'components/footer';
+
+.about {
+	padding: rem(192) 0;
+	background-color: #F5FAFF;
+
+	&__container {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h1 {
+			font-size: rem(48);	
+			font-weight: 600;
+			line-height: 120.833%;
+			letter-spacing: -0.96px;
+			margin-bottom: rem(24);
+		}
+		p {
+			font-size: rem(18);
+			line-height: 155%;
+			max-width: rem(840);
+		}
+		@media(max-width:620px){
+			h1 {
+				@include adaptiveClamp(font-size, 48, 24);
+			}
+			p {
+				font-size: rem(16);
+			}
+		}
+	}
+}
+@import 'components/sections';
+@import 'components/manufactur';
+@import 'components/service';
+
+@import 'components/repair';
+

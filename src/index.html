@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="page">
+        <div data-observ></div>
+        <div class="about">
+          <div class="about__container">
+            <h1 class="about__title">
+              Услуги сервисных центров Москвы
+            </h1>
+            <p class="about__text">
+              Выберите вид техники, производителя или воспользуйтесь поиском, чтобы найти мастерскую для ремонта вашего устройства.
+            </p>
+          </div>
+        </div>
+        @@include('html/sections.html', {})
+        @@include('html/manufactur.html', {})
+        @@include('html/service.html', {})
+        @@include('html/repair.html', {})
+
+        
+      </main>
+      @@include('html/footer.html', {})
+    </div>
+    @@include('html/script.html', {})
+  </body>
+</html> 
